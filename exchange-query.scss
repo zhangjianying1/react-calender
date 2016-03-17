@@ -1,0 +1,74 @@
+body{
+  background: #fff;
+}
+.calender{
+  li{
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+  }
+}
+.form-row{
+  display: -webkit-box;
+  display: box;
+  padding: .1rem;
+  border-bottom: 1px solid #d2d2d2;
+  -webkit-box-align: center;
+  box-align: center;
+  & > *{
+    display: block;
+  }
+  .select-date{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+  }
+  .icon-and{
+    padding: 0 .05rem;
+  }
+  .query-btn{
+    padding-left: .1rem;
+  }
+}
+
+.select{
+  width: 100%;
+  height: .29rem;
+  padding: 0 .05rem;
+  border: 1px solid #ccc;
+  line-height: .29rem;
+  color: #333;
+  font-size: .15rem;
+  border-radius: .03rem;
+  position: relative;
+  &:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: .075rem solid #b6b6b6;
+    border-left-width: .055rem;
+    border-right-width: .055rem;
+    border-left-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0);
+    position: absolute;
+    top: .1rem;
+    right: .05rem;
+  }
+}
+.query-total{
+  padding: 0 .1rem;
+  line-height: .4rem;
+  color: #666;
+}
+/* 兑换列表 */
+.exchange-list{
+  border-top: 1px solid #d2d2d2;
+  dt{
+    height: .3rem;
+    background: #f2f2f2;
+    color: #666;
+  }
+  dd{
+    height: .5rem;
+  }
+}
